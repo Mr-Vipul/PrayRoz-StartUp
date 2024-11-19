@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prayroz/common/widgets/appbar/appbar.dart';
 import 'package:prayroz/common/widgets/images/t_circular_images.dart';
 import 'package:prayroz/common/widgets/layouts/grid_layout.dart';
 import 'package:prayroz/features/shop/screens/store/widgets/category_tab.dart';
@@ -10,6 +11,7 @@ import '../../../../common/widgets/custom_shapes/containers/search_container.dar
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../common/widgets/texts/t_brand_title_text_with_vrified_icon.dart';
 import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class StoreScreen extends StatelessWidget {
@@ -20,14 +22,11 @@ class StoreScreen extends StatelessWidget {
     return DefaultTabController(
       length: 5,
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Store',
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
+        appBar: TAppBar(
+          title: Text('Store', style: Theme.of(context).textTheme.headlineMedium,),
           actions: [
             IconButton(
-              icon: const Icon(Icons.shopping_cart), // Replace `TCartCounterIcon` if it's a custom widget
+              icon: const Icon(Icons.shopping_cart),
               onPressed: () {
                 // Handle cart button press
               },
@@ -41,9 +40,7 @@ class StoreScreen extends StatelessWidget {
                 automaticallyImplyLeading: false,
                 pinned: true,
                 floating: true,
-                backgroundColor: Theme.of(context).brightness == Brightness.dark
-                    ? Colors.black
-                    : Colors.white,
+                backgroundColor: THelperFunctions.isDarkMode(context) ? TColors.black: TColors.white,
                 expandedHeight: 440,
                 flexibleSpace: Padding(
                   padding: const EdgeInsets.all(TSizes.defaultSpace),
@@ -51,6 +48,7 @@ class StoreScreen extends StatelessWidget {
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     children: [
+
                       /// -- Search bar
                       const SizedBox(height: TSizes.spaceBtwItems),
                       const TSearchContainer(
@@ -77,8 +75,8 @@ class StoreScreen extends StatelessWidget {
                                 /// -- Icon Container
                                 Flexible(
                                   child: TCircularImage(
-                                    isNetworkImage: true,
-                                    image: "https://www.bigbasket.com/media/uploads/p/xxl/1231262_1-mangaldeep-mogra-dhoop.jpg",
+                                    isNetworkImage: false,
+                                    image: TImages.dhoop,
                                     backgroundColor: Colors.transparent,
                                     overlayColor: THelperFunctions.isDarkMode(context)
                                         ? TColors.white
@@ -115,6 +113,7 @@ class StoreScreen extends StatelessWidget {
                 ),
 
                 bottom: const TabBar(
+                  isScrollable: true,
                   tabs: [
                       Tab(child: Text('Flowers')),
                       Tab(child: Text('Hawan Samagri')),

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:prayroz/utils/constants/colors.dart'; // Replace with actual path for your color constants
+// Replace with actual path for your color constants
 import 'package:prayroz/utils/constants/sizes.dart'; // Replace with actual path for your sizes constants
-import 'package:prayroz/utils/helpers/helper_functions.dart'; // Replace with actual path for your helper functions
+// import 'package:prayroz/utils/helpers/helper_functions.dart'; // Replace with actual path for your helper functions
 import 'package:prayroz/common/widgets/images/t_circular_images.dart'; // Replace with actual path for your image widget
 // import 'package:prayroz/utils/constants/images.dart';
 
+import '../../../utils/constants/image_strings.dart';
 import '../custom_shapes/containers/rounded_container.dart';
 // Replace with actual path for your image constants
 
@@ -16,25 +17,25 @@ class TBrandCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = THelperFunctions.isDarkMode(context);
+    // final bool isDark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
       onTap: onTap,  // Fixed the onTap issue
 
       child: TRoundedContainer(
-        showBorder: showBorder,  // Corrected `showborder` to `showBorder`
+        showBorder: showBorder,
         backgroundColor: Colors.transparent,
         padding: const EdgeInsets.all(TSizes.sm),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Icon
-            Flexible(
+            const Flexible(
               child: TCircularImage(
                 isNetworkImage: false,
-                image: '',  // Replace with actual image asset path
+                image: TImages.dhoop,  // Replace with actual image asset path
                 backgroundColor: Colors.transparent,
-                overlayColor: isDark ? TColors.white : TColors.black,
+                // overlayColor: isDark ? TColors.white : TColors.black,
               ),
             ),
 

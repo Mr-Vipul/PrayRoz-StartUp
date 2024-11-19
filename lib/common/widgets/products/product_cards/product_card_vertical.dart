@@ -42,7 +42,7 @@ class TProductCardVertical extends StatelessWidget {
                 children: [
                   const Center(
                     child: TRoundImage(
-                      imageUrl: TImages.pooja_1,
+                      imageUrl: TImages.dhoop,
                       applyImageRadius: true,
                     ),
                   ),

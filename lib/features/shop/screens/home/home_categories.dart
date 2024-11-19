@@ -22,7 +22,7 @@ class THomeCategories extends StatelessWidget {
         itemCount: 6,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
-          return TVerticalImageText(image: TImages.agni, title: 'Online & Offline Pooja', textColor: TColors.White, onTap: (){},);
+          return TVerticalImageText(image: TImages.agni, title: 'Pooja', textColor: TColors.White, onTap: (){},);
         },
       ),
     );

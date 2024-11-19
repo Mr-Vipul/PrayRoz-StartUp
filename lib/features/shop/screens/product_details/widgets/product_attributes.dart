@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prayroz/common/widgets/texts/product_price_text.dart';
-import 'package:prayroz/common/widgets/texts/product_title_text.dart';
 
-import '../../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
-import '../../../../../common/widgets/texts/section_heading.dart';
-import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/helpers/helper_functions.dart';
 
 class TProductAttributes extends StatelessWidget {
   const TProductAttributes({super.key});
@@ -15,7 +9,7 @@ class TProductAttributes extends StatelessWidget {
   Widget build(BuildContext context) {
     // final dark = THelperFunctions.isDarkMode(context);
 
-    return Column(
+    return const Column(
       children: [
         /// Selected Attribute Pricing & Description
         // TRoundedContainer(
@@ -61,7 +55,7 @@ class TProductAttributes extends StatelessWidget {
         //     ],
         //   ),
         // ),
-        const SizedBox(height: TSizes.spaceBtwItems),
+        SizedBox(height: TSizes.spaceBtwItems),
 
         ///Attributes
         Column(
