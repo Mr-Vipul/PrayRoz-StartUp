@@ -115,10 +115,10 @@ class StoreScreen extends StatelessWidget {
                 bottom: const TabBar(
                   isScrollable: true,
                   tabs: [
-                      Tab(child: Text('Flowers')),
+                      Tab(child: Text('Dhoop Batti')),
                       Tab(child: Text('Hawan Samagri')),
                       Tab(child: Text('Clothes')),
-                      Tab(child: Text('Prasad')),
+                      Tab(child: Text('D')),
                       Tab(child: Text('Books')),
                   ],
                 ),
