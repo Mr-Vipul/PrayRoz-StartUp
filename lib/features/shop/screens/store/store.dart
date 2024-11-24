@@ -91,7 +91,7 @@ class StoreScreen extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       const TBrandTitleWithVerifiedIcon(
-                                        title: 'Dhoop',
+                                        title: 'Dhoop Batti',
                                         brandTextSize: TextSizes.large,
                                       ),
                                       Text(
