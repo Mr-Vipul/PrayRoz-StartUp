@@ -21,16 +21,18 @@ class AuthenticationRepository extends GetxController {
 
   /// Function to Show Relevant Screen
   void screenRedirect() async {
-
-    if(kDebugMode){
+    if (kDebugMode) {
       print('======Get Storage Auth Repo=========');
       print(deviceStorage.read('IsFirsTime'));
     }
     // Check if this is the first launch
     deviceStorage.writeIfNull('IsFirstTime', true);
-    deviceStorage.read('IsFirstTime') != true ?Get.offAll(() => const LoginScreen()) : Get.offAll(const OnBoardingScreen());
+    deviceStorage.read('IsFirstTime') != true ? Get
+        .offAll(() => const LoginScreen()) : Get.offAll(
+        const OnBoardingScreen());
     // Navigate to the relevant screen
 
 
-/// Additional authentication methods (e.g., email & password sign-in) can go here
+    /// Additional authentication methods (e.g., email & password sign-in) can go here
+  }
 }

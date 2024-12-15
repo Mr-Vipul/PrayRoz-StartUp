@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prayroz/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:prayroz/features/authentication/controllers.onboarding/onboarding/onboarding_controller.dart';
 import 'package:prayroz/utils/constants/sizes.dart';
 import 'package:prayroz/utils/device/device_utility.dart';
 
