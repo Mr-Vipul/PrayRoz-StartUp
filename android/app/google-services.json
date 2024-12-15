@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "855991807023",
+    "project_id": "prayroz-47c64",
+    "storage_bucket": "prayroz-47c64.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855991807023:android:4785f1b066f7d370776ada",
+        "android_client_info": {
+          "package_name": "com.example.prayroz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855991807023-tu2u3s0625m71fvqupjeumlr3n8ih62c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prayroz",
+            "certificate_hash": "511934f61950e17c75dcf6d318003cd04f4d84e2"
+          }
+        },
+        {
+          "client_id": "855991807023-rnp7m7tqasv3u2janrc0dim5sm3klvjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Od8N1fVsrZX-l5f2dohehZx3Yts1XEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855991807023-rnp7m7tqasv3u2janrc0dim5sm3klvjb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "855991807023-nf0flhfta8lksu6cd71s021aa3399tvq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.prayroz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

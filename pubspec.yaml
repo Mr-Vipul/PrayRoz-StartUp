@@ -47,6 +47,7 @@ dependencies:
 
 
   smooth_page_indicator: any
+  firebase_core: ^3.8.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

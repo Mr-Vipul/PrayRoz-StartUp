@@ -10,6 +10,8 @@ import 'package:prayroz/features/personalization/screens/profile/profile.dart';
 import 'package:prayroz/utils/constants/colors.dart';
 import 'package:prayroz/utils/constants/sizes.dart';
 
+import '../address/address.dart';
+
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
 
@@ -42,7 +44,7 @@ class SettingScreen extends StatelessWidget {
                       const TSectionHeading(title: 'Account Settings', showActionButton: false,),
                       const SizedBox(height: TSizes.spaceBtwItems,),
 
-                      const TSettingsMenuTile(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set your delivery address'),
+                      TSettingsMenuTile(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set your delivery address', onTap:() => Get.to(() => UserAddressScreen()), ),
                       const TSettingsMenuTile(icon: Iconsax.shopping_cart, title: 'My Cart', subTitle: 'Add, remove products and services and move to checkout'),
                       const TSettingsMenuTile(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and Completed services and orders'), 
                       const TSettingsMenuTile(icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'),
