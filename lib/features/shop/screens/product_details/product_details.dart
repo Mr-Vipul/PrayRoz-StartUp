@@ -3,7 +3,7 @@ import 'package:prayroz/features/shop/screens/product_details/widgets/product_me
 import 'package:prayroz/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 
 import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/helpers/helper_functions.dart';
+// import '../../../../utils/helpers/helper_functions.dart';
 import 'widgets/product_detail_iamge.dart';
 
 class ProductDetail extends StatelessWidget {
@@ -11,7 +11,7 @@ class ProductDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    // final dark = THelperFunctions.isDarkMode(context);
 
     return const Scaffold(
       body: SingleChildScrollView(

@@ -52,7 +52,7 @@ class StoreScreen extends StatelessWidget {
                       /// -- Search bar
                       const SizedBox(height: TSizes.spaceBtwItems),
                       const TSearchContainer(
-                        text: 'Search in Store',
+                        text: 'Search in Stores',
                         showBorder: true,
                         showBackground: false,
                         padding: EdgeInsets.zero,
@@ -60,7 +60,7 @@ class StoreScreen extends StatelessWidget {
                       const SizedBox(height: TSizes.spaceBtwSections),
 
                       /// -- Featured Brands
-                      TSectionHeading(title: 'Featured Brands', onPressed: () {}),
+                      TSectionHeading(title: 'Featured Items List', onPressed: () {}),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
                       TGridLayout(itemCount: 4, mainAxisExtent:80, itemBuilder: (_,index){
@@ -91,7 +91,7 @@ class StoreScreen extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       const TBrandTitleWithVerifiedIcon(
-                                        title: 'Dhoop',
+                                        title: 'Dhoop Batti and ',
                                         brandTextSize: TextSizes.large,
                                       ),
                                       Text(
@@ -115,10 +115,10 @@ class StoreScreen extends StatelessWidget {
                 bottom: const TabBar(
                   isScrollable: true,
                   tabs: [
-                      Tab(child: Text('Flowers')),
+                      Tab(child: Text('Dhoop Batti')),
                       Tab(child: Text('Hawan Samagri')),
                       Tab(child: Text('Clothes')),
-                      Tab(child: Text('Prasad')),
+                      Tab(child: Text('D')),
                       Tab(child: Text('Books')),
                   ],
                 ),
