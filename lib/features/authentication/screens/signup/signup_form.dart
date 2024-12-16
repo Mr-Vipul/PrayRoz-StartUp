@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prayroz/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:prayroz/features/authentication/screens/signup/terms_conditions_checkbox.dart';
-import 'package:prayroz/features/authentication/screens/signup/verify_email.dart';
 import 'package:prayroz/utils/constants/sizes.dart';
 import 'package:prayroz/utils/constants/text_strings.dart';
 import 'package:prayroz/utils/validators/validation.dart';
@@ -112,7 +110,7 @@ class TSignupForm extends StatelessWidget {
           const TTermsAndConditionCheckBox(dark: false),
           const SizedBox(height: TSizes.spaceBtwSections),
 
-          SizedBox(width: double.infinity, child: ElevatedButton(onPressed:()=> Get.to(() => const VerifyEmailScreen()), child:  const Text(TTexts.createAccount),),),
+          SizedBox(width: double.infinity, child: ElevatedButton(onPressed:()=> controller.signup(), child:  const Text(TTexts.createAccount),),),
 
         ],
         

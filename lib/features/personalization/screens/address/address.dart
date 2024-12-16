@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prayroz/common/widgets/appbar/appbar.dart';
-import 'package:prayroz/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:prayroz/features/personalization/screens/address/widgets/single_address.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';

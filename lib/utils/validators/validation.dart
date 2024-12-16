@@ -84,6 +84,4 @@ class TValidator {
 
     return null;
   }
-
-  static validateEmptyText(String s, String? value) {}
 }
