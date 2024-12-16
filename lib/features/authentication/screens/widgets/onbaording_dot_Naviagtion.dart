@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:prayroz/features/authentication/controllers.onboarding/onboarding/onboarding_controller.dart';
 import 'package:prayroz/utils/constants/colors.dart';
 import 'package:prayroz/utils/constants/sizes.dart';
 import 'package:prayroz/utils/device/device_utility.dart';
 import 'package:prayroz/utils/helpers/helper_functions.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import '../../controllers/onboarding/onboarding_controller.dart';
 
 class OnBoardingNavigation extends StatelessWidget {
   const OnBoardingNavigation({

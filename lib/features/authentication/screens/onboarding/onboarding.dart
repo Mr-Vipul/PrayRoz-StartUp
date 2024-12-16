@@ -7,8 +7,7 @@ import 'package:prayroz/features/authentication/screens/widgets/onboarding_skip.
 import 'package:prayroz/utils/constants/image_strings.dart';
 import 'package:prayroz/utils/constants/text_strings.dart';
 import 'package:prayroz/utils/helpers/helper_functions.dart';
-
-import '../../controllers.onboarding/onboarding/onboarding_controller.dart';
+import '../../controllers/onboarding/onboarding_controller.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
