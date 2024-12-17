@@ -67,8 +67,8 @@ flutter:
   uses-material-design: true
   assets:
     # - assets/icons/
-    - assets/images/on_boarding_images/Delivery.gif
-    - assets/images/on_boarding_images/Searching.gif
+    - assets/images/on_boarding_images/delivery.gif
+    - assets/images/on_boarding_images/searching.gif
     - assets/images/on_boarding_images/shopping.gif
     - assets/images/animated/email.gif
     - assets/logos/ic_launcher.png

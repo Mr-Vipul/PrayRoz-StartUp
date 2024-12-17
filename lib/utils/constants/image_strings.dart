@@ -9,9 +9,9 @@ class TImages {
   static const String facebook = "assets/icons/communication.png";
 
   // Onboarding Images
-  static const String onBoardImage1 = "assets/images/on_boarding_images/Searching.gif";
+  static const String onBoardImage1 = "assets/images/on_boarding_images/searching.gif";
   static const String onBoardImage2 = "assets/images/on_boarding_images/shopping.gif";
-  static const String onBoardImage3 = "assets/images/on_boarding_images/Delivery.gif";
+  static const String onBoardImage3 = "assets/images/on_boarding_images/delivery.gif";
 
   // Explore prayroz
   static const String agni       = "assets/icons/explore_prayroz/agni-pooja.png";

@@ -6,10 +6,13 @@ import 'package:prayroz/common/widgets/custom_shapes/containers/primary_header_c
 import 'package:prayroz/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:prayroz/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:prayroz/common/widgets/texts/section_heading.dart';
+import 'package:prayroz/features/authentication/screens/login/login.dart';
+import 'package:prayroz/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:prayroz/features/personalization/screens/profile/profile.dart';
 import 'package:prayroz/utils/constants/colors.dart';
 import 'package:prayroz/utils/constants/sizes.dart';
 
+import '../../../shop/screens/home/widgets/home.dart';
 import '../address/address.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -51,16 +54,13 @@ class SettingScreen extends StatelessWidget {
                       const TSettingsMenuTile(icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all the discounted coupons'),
                       const TSettingsMenuTile(icon: Iconsax.notification, title: 'Notifications', subTitle: 'Set any kind of notification message'),
                       const TSettingsMenuTile(icon: Iconsax.security_card, title: 'Account Privacy', subTitle: 'Manage data usage and connected accounts'),
-
                       /// App Settings
                       const SizedBox(height: TSizes.spaceBtwSections),
                       const TSectionHeading(title: 'App Settings', showActionButton: false),
                       const SizedBox(height: TSizes.spaceBtwItems),
                       const TSettingsMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subTitle: 'Upload Data to your Cloud Firebase'),
 
-
                      TSettingsMenuTile(
-
                           icon: Iconsax.location,
                           title: 'Geolocation',
                           subTitle: 'Set recommendation based on location',
@@ -82,10 +82,20 @@ class SettingScreen extends StatelessWidget {
 
                       const SizedBox(height: TSizes.spaceBtwSections,),
 
+                      // SizedBox(
+                      //   width: double.infinity,
+                      //   child: OutlinedButton(onPressed: ()=> TLoginForm() , child: const Text('Logout')),
+                      // ),
                       SizedBox(
                         width: double.infinity,
-                        child: OutlinedButton(onPressed: (){}, child: const Text('Logout')),
+                        child: OutlinedButton(
+                          onPressed: () {
+                            Get.offAll(() => LoginScreen());  // Navigates to the Login screen
+                          },
+                          child: const Text('Logout'),
+                        ),
                       ),
+
 
                       const SizedBox(height: TSizes.spaceBtwSections*1,),
           
