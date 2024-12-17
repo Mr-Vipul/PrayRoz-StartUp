@@ -3,6 +3,7 @@ class TImages {
   static const String darkAppLogo = "assets/logos/PrayLogo.jpg";
   static const String lightAppLogo = "assets/logos/PrayLogo.jpg";
   static const String email = "assets/images/animated/email.gif";
+  static const String loading = "assets/images/animated/loading.gif";
 
   // Social Logos
   static const String google = "assets/icons/google.png";
@@ -12,6 +13,7 @@ class TImages {
   static const String onBoardImage1 = "assets/images/on_boarding_images/searching.gif";
   static const String onBoardImage2 = "assets/images/on_boarding_images/shopping.gif";
   static const String onBoardImage3 = "assets/images/on_boarding_images/delivery.gif";
+
 
   // Explore prayroz
   static const String agni       = "assets/icons/explore_prayroz/agni-pooja.png";

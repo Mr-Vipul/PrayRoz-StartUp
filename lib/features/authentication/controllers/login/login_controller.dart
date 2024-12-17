@@ -1,6 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:prayroz/features/personalization/controllers/user_controller.dart';
 
 import '../../../../common/widgets/loaders/loaders.dart';
 import '../../../../common/widgets/loaders/network_manager.dart';
@@ -16,6 +18,7 @@ class LoginController extends GetxController {
   final email = TextEditingController();
   final password = TextEditingController();
   GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
+  final userController = Get.put(UserController());
 
 
   @override
@@ -66,6 +69,64 @@ class LoginController extends GetxController {
   }
 
 
+  ///Google Sign In
+  // Future<void> googleSignIn() async{
+  //   try{
+  //     TFullScreenLoader.openLoadingDialog('Logging You in...', TImages.loading);
+  //
+  //     // final isConnected = await NetworkManager.instance.isConnected();
+  //     // if (!isConnected) {
+  //     //   TFullScreenLoader.stopLoading();
+  //     //   return;
+  //     // }
+  //
+  //     //Google Auth
+  //     final userCredentials = AuthenticationRepository.instance.signInWithGoogle();
+  //
+  //     ///SAVE USER
+  //     await userController.saveUserRecord(userCredentials);
+  //     TFullScreenLoader.stopLoading();
+  //     AuthenticationRepository.instance.screenRedirect();
+  //
+  //   }catch(e){
+  //     TFullScreenLoader.stopLoading();
+  //     TLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
+  //   }
+  // }
+
+  /// Google Sign In
+  Future<void> googleSignIn() async {
+    try {
+      TFullScreenLoader.openLoadingDialog('Logging You in...', TImages.loading);
+
+      // Check if the user is connected to the internet (if needed)
+      // final isConnected = await NetworkManager.instance.isConnected();
+      // if (!isConnected) {
+      //   TFullScreenLoader.stopLoading();
+      //   return;
+      // }
+
+      // Google Auth
+      final userCredentials = await AuthenticationRepository.instance.signInWithGoogle(); // Use await here
+
+      if (userCredentials != null) {
+        /// SAVE USER
+        await userController.saveUserRecord(userCredentials); // Pass the result directly
+
+        // Stop the loading dialog
+        TFullScreenLoader.stopLoading();
+
+        // Redirect to the appropriate screen
+        AuthenticationRepository.instance.screenRedirect();
+      } else {
+        TFullScreenLoader.stopLoading();
+        TLoaders.errorSnackBar(title: 'Sign In Failed', message: 'Google Sign In failed.');
+      }
+    } catch (e) {
+      TFullScreenLoader.stopLoading();
+      TLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
+    }
+  }
 
 
 }

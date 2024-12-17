@@ -42,8 +42,8 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwItems),
 
             // Heading personal info
-            TProfileMenu(title: 'Name', value: 'Rahul Singh', onPressed: () {}),
-            TProfileMenu(title: 'Username', value: 'Rahul_Sikarwar', onPressed: () {}),
+            TProfileMenu(title: 'Name', value: 'Vipul Goyal', onPressed: () {}),
+            TProfileMenu(title: 'Username', value: 'Vipul2003', onPressed: () {}),
 
             const SizedBox(height: TSizes.spaceBtwItems),
             const Divider(),
@@ -53,11 +53,11 @@ class ProfileScreen extends StatelessWidget {
             const TSectionHeading (title: 'Personal Information', showActionButton: false,),
             const SizedBox(height: TSizes.spaceBtwItems),
 
-            TProfileMenu(title: 'User ID', value: '04519011721', icon: Iconsax.copy, onPressed: () {}),
-            TProfileMenu(title: 'E-mail', value: 'rahul2002@gmail.com', onPressed: () {}),
-            TProfileMenu(title: 'Phone No.', value: '+91-9625564381', onPressed: () {}),
+            TProfileMenu(title: 'User ID', value: '02419011721', icon: Iconsax.copy, onPressed: () {}),
+            TProfileMenu(title: 'E-mail', value: 'goyalvipul2002@gmail.com', onPressed: () {}),
+            TProfileMenu(title: 'Phone No.', value: '+91-8800207681', onPressed: () {}),
             TProfileMenu(title: 'Gender', value: 'Male', onPressed: () {}),
-            TProfileMenu(title: 'Date of Birth', value: '01 Oct, 2000', onPressed: () {}),
+            TProfileMenu(title: 'Date of Birth', value: '29 Jun, 2003', onPressed: () {}),
 
             const Divider(),
             const SizedBox(height: TSizes.spaceBtwItems,),

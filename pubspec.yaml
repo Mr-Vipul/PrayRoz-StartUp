@@ -55,6 +55,7 @@ dependencies:
 
 
   flutter_native_splash: any
+  google_sign_in: ^6.2.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -81,6 +82,7 @@ flutter:
     - assets/images/banner/
     - assets/images/poojas/
     - assets/images/user/
+    - assets/images/animated/
 
 
 fonts:

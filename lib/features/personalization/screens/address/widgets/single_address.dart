@@ -34,7 +34,7 @@ class TSingleAddress extends StatelessWidget{
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('GGSIPU EDC, Vishwas Nagar, Shahdra, Delhi 110092',
+              Text('Address-1',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.titleLarge,
@@ -43,8 +43,19 @@ class TSingleAddress extends StatelessWidget{
               const Text('(+91-8800207681)', maxLines: 1, overflow: TextOverflow.ellipsis,),
               const SizedBox(height: TSizes.sm/2,),
               const Text('GGSIPU EDC, Vishwas Nagar, Shahdra, Delhi 110092'),
+
+              Text('Address-2 Home',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+              const SizedBox(height: TSizes.sm/2,),
+              const Text('8800207681', maxLines: 1, overflow: TextOverflow.ellipsis,),
+              const SizedBox(height: TSizes.sm/2,),
+              const Text('Kalkaji New Delhi 110019'),
             ],
-          )
+          ),
+
         ],
       ),
     );
